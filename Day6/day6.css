@@ -1,0 +1,79 @@
+body{
+  background-color: lightblue;
+}
+
+.parent{
+  height:600px;
+  background-image: url('mountain.jpg');
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+
+.child{
+  position: absolute;
+  bottom: 0;
+  animation-name: movebus;
+  /* animation-duration: 3s; */
+  /* animation-iteration-count:infinite; */
+  animation:movebus 3s 2s infinite;
+}
+
+.child img{
+width: 100%;
+height: 100%;
+
+}
+
+@keyframes movebus1 {
+  0% {left:0;}
+  50% {left:30%;}
+  100% {left:60%;}
+}
+
+@keyframes movebus2 {
+  0% {left:0;}
+  100% {left:60%;}
+}
+.child1{
+  position: absolute;
+  bottom: 30%;
+  animation-name: movebus1;
+  /* animation-duration: 3s; */
+  /* animation-iteration-count:infinite; */
+  animation:movebus1 8s 2s;
+}
+
+.child2{
+  position: absolute;
+  bottom: 0;
+  animation-name: movebus2;
+  /* animation-duration: 3s; */
+  /* animation-iteration-count:infinite; */
+  animation:movebus2 9s 2s;
+}
+
+.stage{
+width:30%;
+height:300px;
+/* border: 4px solid red; */
+margin: auto;
+overflow: hidden;
+text-align: center;
+border: 8px dotted blue;
+box-shadow: 13px 10px 10px orange;
+}
+
+.slideWrapper {
+  width:400%;
+  height: ;
+height:100%;
+animation: slideshow 4s;
+}
+
+.slide {
+width:25%;
+height:100%;
+float: left;
+
+}
